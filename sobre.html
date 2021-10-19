@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://leandrorodriguesadvocacia.com.br/wp-content/uploads/2019/03/leandro-rodrigues-advocacia-logo-2.png" type="image/x-icon">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		::-webkit-scrollbar-thumb{
+			background-color: #1d1d1d;
+		}
+		::-webkit-scrollbar{
+			width: 15px;
+			background-color: rgb(82, 80, 80);
+		}
+		body{
+			background-color: rgb(12, 12, 12);
+		}
+		#imagem-logo{
+			width: 130px;
+			height: auto;
+			display: block;
+			position: absolute;
+			margin-left: 5vw;
+			margin-top: -76px;
+		}	
+		nav{
+			width: 100%;
+			height: 80px;
+			padding-right: 90px;
+			padding-top: 13px;
+			background-color: rgb(8, 8, 8);
+		}
+		.menu_divisao ul li {
+			display: inline;
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		ul li{
+			float: right;
+			font-size: 13pt;
+			font-family: Arial, Helvetica, sans-serif;
+			padding: 10px;
+		}
+		#icone-login{
+			width: 40px ;
+			height: 40px;
+			margin-left: 94vw;
+			display: block;
+			position: absolute;
+			background-position: center;
+			border-radius: 50%;
+		}
+		#destaque-link:hover{
+			transition: 0.5s;
+			color: rgba(255, 255, 255, 0.596);
+		}
+		#destaque-link{
+			color: white;
+			border-bottom: 3px solid rgb(121, 91, 8);
+		}
+		#imagem-advg{
+			width: 500px;
+			height: auto;
+			margin-left: 5vw;
+			margin-top: 30px;
+		}
+		.conteudo_lateral-chamada{
+			width: 90%;
+			height: 90vh;
+			background-color: rgb(14, 13, 13);
+			margin-left: 5vw;
+			margin-top: 15vh;
+			margin-bottom: 15vh;
+		}
+		#text_principio{
+			display: block;
+			margin-left: 45vw;
+			margin-top: -73vh;
+			font-size: 30pt;
+			font-family: Arial, Helvetica, sans-serif;
+			color: rgb(121, 91, 8);
+			position: absolute;
+		}
+		#span_advg-principio{
+			display:  block;
+			position: absolute;
+			letter-spacing: 5px;
+			font-size: 18pt;
+			font-family: Arial, Helvetica, sans-serif;
+			margin-top: -77vh;
+			margin-left: 53vw;
+			color: white;
+		}
+		p{
+			position: absolute;
+			display: block;
+			margin-left: 45vw;
+			margin-top: -55vh;
+			margin-right: 10vw;
+			letter-spacing: 2px;
+			font-size: 15pt;
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: left;
+			color: rgb(173, 173, 173);
+		}
+		#btn_saiba{
+			width: 160px;
+			height: 45px;
+			background-color: rgb(173, 173, 173);
+			border: none;
+			display: block;
+			margin-left: 45vw;
+			margin-top: -20vh;
+		}
+		#link_btn-saiba{
+			color: black;
+			font-size: 15pt;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		}
+		#link_btn-saiba:hover{
+			border: none;
+			color: rgba(17, 17, 17, 0.473);
+			transition: 0.5s;
+		}
+		#logo-advg_main{
+			width: 130px;
+			margin-left: 75vw;
+			margin-top: 8vh;
+			display: block;
+		}
+		a:hover{
+			color: rgba(255, 255, 255, 0.596);
+			border-bottom: 2px solid rgb(121, 91, 8);
+		}
+		a:visited{
+			border-bottom: 2px solid rgb(121, 91, 8);
+		}
+		a:active{
+			border-bottom: 2px solid rgb(121, 91, 8);
+		}
+		footer{
+			width: 100%;
+			height: 150px;
+			background-color: rgba(17, 17, 17, 0.473);
+		}
+		#dev-lucas_descri{
+			color: white;
+			font-size: 15pt;
+			display: block;
+			margin-left: 5vw;
+			padding-top: 10vh;
+		}
+		#link-lc{
+			border-bottom: 3px solid rgb(121, 91, 8);
+			padding-left: 2px;
+		}
+		#imagem-lc{
+			width: 100px;
+			height: auto;
+			margin-left: 88vw;
+			margin-top: 60px;
+			position: absolute;
+		}
+		#img_anuncio-1{
+			width: 200px;
+			position: absolute;
+			margin-top: 55px;
+			margin-left: 75vw;
+		}
+		#img_anuncio-2{
+			width: 100px;
+			position: absolute;
+			margin-top: 50px;
+			margin-left: 70vw;
+		}
+		#patrocinios_span{
+			color: white;
+			font-size: 20pt;
+			font-family: Arial, Helvetica, sans-serif;
+			display: block;
+			position: absolute;
+			margin-left: 78vw;
+			margin-top: 5mm;
+			margin-bottom: 10mm;
+		}
+	</style>
+	<title>Leandro Rodrigues</title>
+</head>
+<body>
+	<nav>
+		<div class="menu_divisao">
+			<ul>
+				<li id="destaque-li"><a href="#" id="destaque-link">Sobre</a></li>
+				<li><a href="http://127.0.0.1:5500/raund/contact/contact.html">Contato</a></li>
+				<li><a href="#">Social</a></li>
+				<li><a href="#">Localização</a></li>
+				<li><a href="#">Portifolio</a></li>
+				<li><a href="http://127.0.0.1:5500/raund/aplicativo.html">Home</a></li>
+			</ul>
+			<a href="#"><img src="https://robertolacerda.com.br/wp-content/uploads/2018/05/icone1.png" alt="icone-login" id="icone-login"></a>
+		</div>
+	</nav>
+	<section>
+		<div class="campo-home">
+			<img src="https://leandrorodriguesadvocacia.com.br/wp-content/uploads/2019/03/leandro-rodrigues-advocacia-logo-2.png" alt="imagem-logo" id="imagem-logo">
+		</div>
+	</section>
+	<main class="conteudo_lateral-chamada">
+		<div class="part-wile">
+			<img src="https://p1.pxfuel.com/preview/843/535/782/man-serious-senior-portrait-face-official.jpg" alt="imagem-advg" id="imagem-advg">
+			<span id="span_advg-principio">Advogado</span>
+			<h1 id="text_principio">Leandro Rodrigues</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae quis officiis impedit asperiores rerum, veritatis tenetur, qui quia praesentium doloremque ipsam. Autem ab dolor, est animi beatae esse odio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae! Assumenda!</p>
+			<button id="btn_saiba"><a href="#" id="link_btn-saiba">Saiba Mais</a></button>
+			<div class="camp_logo-advg">
+				<img src="https://leandrorodriguesadvocacia.com.br/wp-content/uploads/2019/03/leandro-rodrigues-advocacia-logo-2.png" alt="imagem-logo" id="logo-advg_main">
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="camp-footer">
+			<span id="patrocinios_span">Patrocinios:</span>
+			<img src="https://images.squarespace-cdn.com/content/v1/59583430b3db2be61086b315/1579723083735-KXRIY77ROUS1UDI8HMG9/Logos_PHOLO-01.png?format=2500w" alt="img" id="img_anuncio-1">
+			<img src="https://www.zilliondesigns.com/images/portfolio/construction-company/Logo-for-Construction-Company-1389180.png" id="img_anuncio-2">
+			<img src="" alt="">
+			<img src="https://leandrorodriguesadvocacia.com.br/wp-content/uploads/2019/03/leandro-rodrigues-advocacia-logo-2.png" alt="#" id="imagem-lc">
+			<span id="dev-lucas_descri">Desenvolvido por: <a href="#" id="link-lc">Lucas Guimarães</a></span>
+			</div>
+		</div>
+	</footer>
+
+	
+</body>
+</html>
