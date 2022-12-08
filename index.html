@@ -4,104 +4,107 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style/style.css">
 	<style>
-		*{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
 		body{
-			background-color: #686868;
+			background-color: white;
 		}
-		.app{
-			background-color: rgb(59, 59, 59);
-			width: 100%;
-			height: 100vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-		.icon--ios{
-			position: absolute;
-			left: 10%;
-		}
-		.glassmorphism{
-			height: 150px;
-			width: 250px;
-			border-radius: 20px;
-			backdrop-filter: blur(3px);
-			background: linear-gradient(-45deg, rgb(70, 68, 69), rgba(66, 167, 150, 0.596));
-			margin-top: -25rem;
-		}
-
-		.glassmorphism2{
-			height: 150px;
-			width: 250px;
-			background: linear-gradient(-45deg, rgb(70, 68, 69), rgba(66, 167, 150, 0.596));
+		h1{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 30pt;
+			display: block;
+			margin-left: 1rem;
 			margin-top: 3rem;
-			backdrop-filter: blur(3px);
-			border-radius: 20px;
-			position: absolute;	
+			border-bottom: 5px solid black;
 		}
+		form{
+			width: 100%;
+			height: 50vh;
+			border: none;
 
-		.glassmorphism3{
-			height: 150px;
-			width: 250px;
-			background: linear-gradient(10deg, rgb(70, 68, 69), rgb(66, 167, 150));
-			margin-top: 30rem;
-			backdrop-filter: blur(3px);
-			border-radius: 20px;
-			position: absolute;
 		}
-
-		span{
-			display: flex;
-			justify-content: center;
-			padding-top: 7rem;
-			letter-spacing: 1px;
-			font-family: Arial, Helvetica, sans-serif;
+		input{
+			margin-top: 1rem;
+			margin-left: 1rem;
+			margin-bottom: 1rem;
+			display: block;
+			height: 30px;
+		}
+		input::placeholder{
 			font-size: 10pt;
-		}
-
-		a{
-			color: rgb(179, 178, 178);
-			text-decoration: none;
-		}
-
-		.text--infomativo{
 			font-family: Arial, Helvetica, sans-serif;
+			padding-left: .5rem;
+		}
+		label{
+			color: rgb(2, 2, 2);
+			display: block;
+			margin-left: 1rem;
 			font-size: 12pt;
-			text-align: left;
-			margin-left: .5rem;
-			margin-right: .2rem;
-			margin-top: .8rem;
-			position: absolute;
-			color: rgb(219, 219, 219);
+			font-family: Arial, Helvetica, sans-serif;
+			
+		}
+		button{
+			width: 150px;
+			height: 50px;
+			background-color: black;
+			display: block;
+			margin-top: 3rem;
+			margin-left: 1rem;
+		}
+		a{
+			font-size: 13pt;
+			color: white;
+			text-decoration: none;
+			font-family: Arial, Helvetica, sans-serif;
+
+		}
+		span{
+			font-size: 10pt;
+			font-family: Arial, Helvetica, sans-serif;
+			display: block;
+			margin-left: 1rem;
+			margin-top: .5rem;
+			text-decoration: underline;
+			color: blue;
+			cursor: pointer;
+		}
+		.linha{
+			height: 20px;
+			color: black;
+			width: 250px;
+			border-bottom: 3px solid black;
+			display: block;
+			margin-bottom: 2rem;
 		}
 	</style>
-	<title>Meu Portifolio</title>
+	<title>Minha princesinha</title>
 </head>
 <body>
-	
-	<section class="part_donw">
-		<div class="app">
-			<img src="https://pt.seaicons.com/wp-content/uploads/2015/10/iOS-Apple-icon.png" class="icon--ios">
-			<div class="glassmorphism">
-				<p class="text--infomativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis</p>
-				<span><a href="#">Saiba Mais > </a></span>
-			</div>
-			
-			<div class="glassmorphism2">
-				<p class="text--infomativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat Lorem ipsum dolor sit amet, consectetur</p>
-				<span><a href="#">Cadastrar > </a></span>
-			</div>
+	<h1>Perguntas & Respostas</h1>
 
-			<div class="glassmorphism3">
-				<p class="text--infomativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat Lorem ipsum dolor sit amet, consectetur</p>
-				<span><a href="#">Meu perfil > </a></span>
-			</div>
-		</div>
+	<section>
+		<form action="#">
+			<label for="city">Qual cidade você nasceu?</label>
+			<input type="text" required placeholder="Digita sua cidade aqui"> 
+
+			<label for="">Qual é o seu Estado?</label>
+			<input type="text" required placeholder="Digite seu Estado aqui">
+
+			<button><a href="#">Enviar</a></button>
+			<span>Proximo</span>
+		</form>
+	</section>
+	<div class="linha"></div>
+	<section>
+		<form action="#">
+			<label for="city">Qual cidade você nasceu?</label>
+			<input type="text" required placeholder="Digita sua cidade aqui"> 
+
+			<label for="">Qual é o seu Estado?</label>
+			<input type="text" required placeholder="Digite seu Estado aqui">
+
+			<button><a href="#">Enviar</a></button>
+			<span>Proximo</span>
+		</form>
 	</section>
 </body>
 </html>
